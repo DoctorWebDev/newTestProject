@@ -38,8 +38,7 @@ function rememberMyfilms () {
         const lastFilm = prompt('Один из последних просмотренных фильмов?', '');
         const scoreFilm = prompt('На сколько оцените его?', '');
     
-        if ( lastFilm != null && scoreFilm != null 
-            && lastFilm != '' && scoreFilm != '' && lastFilm.length < 50) {
+        if ( lastFilm != null && scoreFilm != null && lastFilm != '' && scoreFilm != '' && lastFilm.length < 50) {
     
             personalMovieDB.movies[lastFilm] = scoreFilm;
             console.log('done');
